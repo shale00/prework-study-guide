@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name ="color-scheme" content="dark">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style.css">
@@ -21,7 +22,16 @@
         <ul>
           <li>The head element contains information about the webpage.</li>
           <li>The body element represents the visible content shown to the user.</li>
-          <li></li>
+          <li>HTML attributes are always defined in the beginning element, never the closing element</li>
+          <li>Important metadata tags within the 'head' element</li>
+            <ul>
+              <li>The 'title' element defines the title for a webpage, it is required and imporant for SEO</li>
+              <li>The 'style' element defines the CSS styles associated with a website</li>
+              <li>The 'base' element defines the base URL for a webpage</li>
+              <li>The 'link' element connects an external resource to the HTML document</li>
+              <li>The 'meta' element defines metadata such as the character set, description, keywords, author, and viewport</li>
+              <li>The 'script' element embeds client-side scripts in the HTML document</li>
+            </ul>
         </ul> 
 
       </section>
@@ -29,6 +39,15 @@
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
+          <li>CSS rules have a selector followed by a declaration block denoted within curly brackets '{}'</li>
+            <ul>
+              <li>A selector is what we want the CSS code to effect</li>
+              <li>The declaration block is where we write how we would like the CSS code to effect the selector</li>
+                <ul>
+                  <li>Within the declaration block, for each declaration, there is a property and corresponding property value, separated by a colon ':'</li>
+                  <li>Within each ruleset you must use a semicolon ';' to separate each declaration from the next</li>
+                </ul>
+            </ul>
           <li>A margin indicates how much space we want around thte outside of an element.</li>
           <li>A padding indicates how much space we want around the content inside an element.</li>
         </ul>
@@ -38,8 +57,35 @@
       <section class="card" id="git-section">
         <h2>GIT</h2>
         <ul>
+          <li>The following list describes the order of commands to create a branch</li>
+            <ul>
+              <li>Navigate to the correct directory</li>
+              <li>Type 'git status' to check which branch you're currently in</li>  
+              <li>If you are not in the 'main' branch enter the command 'git checkout main'</li>
+              <li>Pull down the latest main branch by entering 'git pull origin main'</li>
+              <li>Enter the command 'git checkout -b feature/new-branch-name' to create a new branch</li>
+              <li>Confirm you are on the new branch by entering the command 'git status'</li>
+            </ul>
+          <li>The following list describes the order of commands to merge the working branch to the main branch, aka 'completing the git flow'</li>
+            <ul>
+              <li>Be sure you are on the correct working branch, and then use the command 'git add -A' to commit ALL files in the working branch</li>
+              <li>Now that all of the files have been staged, commit them to the repo using the command 'git commit -m "description of changes"'</li>
+              <li>It is good habit to always pull the base branch into your feature branch before pushing up any code; enter 'git pull origin main' to do so</li>
+              <li>Next, push up all of your changes with the command 'git push origin feature/new-branch-name'</li>
+              <li>You will then navigate in GitHub to the corresponding repository and do the following to merge the working branch to the main</li>
+                <ul>
+                  <li>Change the branch to the 'feature/new-branch-name' and refresh the page to confirm the changes pushed are in the feature branch</li>
+                  <li>Navigate to the 'Pull Requests' tab and open a new pull request; make sure you select 'main' as the base and 'feature' as the comparison branch</li>
+                  <li>Click 'Create pull request' to open a PR</li>
+                  <li>Give the PR a title and short description and then click 'Merge pull request' to merge</li>
+                    <ul>
+                      <li>*Remember to have someone review your work before merging</li>
+                    </ul>
+                </ul>
+            </ul>
           <li>git status: checks what branch we are currently on</li>
           <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+          <li>The 'touch' command following by a file name creates a file in your current directory</li>
         </ul>
 
       </section>
@@ -49,7 +95,13 @@
         <ul>
           <li>A variable is a named container that allows us to store data in our code.</li>
           <li>Control flow is the order in which a computer executes code in a script.</li>
-          <li></li>
+          <li>APIs are browser application programming interfaces built into web browsers, providing functionality</li>
+          <li>Comments are snippets of text that can be added along with code by starting the comment with '/*' and ending it with '*/'</li>
+            <ul>
+              <li>If your comment contains no line breaks, it's an option to put it behind two slashes ' // '</li>
+            </ul>
+          <li>An 'operator' is a mathmatical symbol that produces a result based on two vaules (or variables)</li>
+          <li>'Conditionals' are code structures used to test if an expression returns true or not like the 'if' and 'else' statement</li>  
         </ul>
 
       </section>

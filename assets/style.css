@@ -40,3 +40,9 @@ p {
     border: 5px solid gray;
     box-shadow: 5px 10px #27AE60;
   }
+
+@media screen and (prefers-color-scheme: dark) {
+    p {
+      color:#000;
+    }
+  }
